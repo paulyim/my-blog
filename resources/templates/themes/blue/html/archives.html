@@ -1,0 +1,20 @@
+{% extends "/html/base.html" %}
+{%block subtitle %}: 存档{% endblock %}
+{% block content %}
+<div id="posts">
+    <div id="page-header">
+        <h2>存档</h2>
+    </div>
+    {% for group in groups %}
+        <h4>{{group.group}}</h4>
+        <ul>
+        {% for post in group.posts %}
+        <li>
+            {{post.date|date:"MM-dd"}} - <a href="{{post.uri}}">{{post.title}}</a>
+        </li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+
+</div>
+{% endblock %}

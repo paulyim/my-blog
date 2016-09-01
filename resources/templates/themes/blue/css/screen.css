@@ -1,0 +1,269 @@
+/*HEADROOM*/
+.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.headroom--unpinned {top: -100px;}
+.headroom--pinned {top: 0;}
+
+body {
+    color: #444;
+    background-color: #fff;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+a, a:hover {
+    color: #219ab3;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 0;
+}
+
+.left {
+    text-align: left;
+    float: left;
+}
+
+.right {
+    text-align: right;
+    float: right;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#sidebar {
+    width: 300px;
+    float: left;
+    margin-top: 100px;
+    padding-left: 50px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#sidebar ul {
+    list-style: none;
+    padding-left: 5px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+#sidebar h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+#sidebar a,
+#sidebar a:hover {
+    color: #777;
+}
+
+
+.navbar {
+    z-index: 1;
+    background-color: #219ab3;
+}
+.navbar .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.navbar-header {
+    font-family: 'Raleway';
+    min-height: 60px;
+}
+.navbar-default .container .navbar-brand {
+    font-size: 30px;
+    font-weight: 200;
+    color: #fff;
+    height: 20px;
+    padding: 0;
+    margin: 20px 0 20px 50px;
+}
+.navbar-default .container .navbar-brand strong {
+    font-weight: 500;
+}
+.navbar-default .navbar-toggle {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-right: 30px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    padding: 20px 18px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+.navbar-right {
+    margin-right: 0;
+    padding-right: 50px;
+}
+
+#content-wrapper {
+    padding-bottom: 50px;
+    overflow: hidden;
+    min-width: 320px;
+    margin-left: 300px;
+    min-height: 500px;
+    background: none;
+    box-shadow: none;
+}
+#content {
+    max-width: 1000px;
+    min-width: 320px;
+    padding: 50px;
+    padding-top: 100px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-tags-link {
+        display: none;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #fff;
+        background-color: #1e879e;
+    }
+    nav .selected {
+        background: #1e879e;
+    }
+}
+@media (max-width: 767px) {
+    #sidebar {
+        display: none;
+    }
+    #content-wrapper {
+        margin: 0;
+        margin-top: 100px;
+        width: 100%;
+        display: inline-block;
+    }
+    #content {
+        padding: 0 15px;
+        overflow: hidden;
+        min-width: 320px;
+        margin: auto;
+    }
+    .navbar-default .container .navbar-brand {
+        margin: 20px 0 20px 30px;
+        font-size: 25px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding: 10px 30px;
+    }
+}
+
+#prev-next {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+#post-header,
+#page-header {
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d3d3d3;
+}
+#post-header p.date {
+    margin: 0;
+    color: #8f8f8f;
+}
+
+@media (min-width: 768px) {
+    #page-header {
+        border-bottom: 1px solid #d3d3d3;
+    }
+
+    #post-header p.date {
+        float: right;
+        display: inline;
+        margin-top: -25px;
+    }
+
+    #post-header h2,
+    #page-header h2 {
+        margin: 0;
+        font-size: 32px;
+    }
+}
+@media (max-width: 767px) {
+    #post-header h2,
+    #page-header h2 {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    #content h2 {
+        font-size: 24px;
+    }
+
+    #post-header p.date {
+        margin-top: 5px;
+    }
+}
+
+#post-footer {
+    margin-top: 30px;
+}
+
+#comments {
+    border-top: 1px solid #e8e8e8;
+    margin-top: 40px;
+    padding-top: 15px;
+}
+
+#archive .table {
+    font-size: 15px;
+}
+#archive .table tbody tr td {
+    border: none;
+    padding: 0;
+}
+#archive .table tbody tr td.date {
+    width: 130px;
+    color: #8f8f8f;
+}
+#archive .table tbody tr td.title {
+    padding-left: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+.site-footer {
+    border-top: 1px solid #e8e8e8;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+pre {
+    overflow-x: auto;
+}
+pre code {
+    overflow-wrap: normal;
+    white-space: pre;
+}
+
+pre, code.hljs {
+    background-color: #fbfbfb;
+}
+code {
+    color: #219ab3;
+}
+.hljs-comment {
+    color: #556e55;
+}
+
+blockquote {
+    font-size: 1em;
+    color: #777;
+}

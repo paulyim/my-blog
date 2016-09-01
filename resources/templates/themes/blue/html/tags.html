@@ -1,0 +1,15 @@
+{% extends "/html/base.html" %}
+{%block subtitle %}: 标签分类{% endblock %}
+{% block content %}
+<div id="tags-page">
+    <div id="page-header">
+        <h2>标签分类</h2>
+    </div>
+
+    <ul>
+        {% for tag in tags %}
+        <li><a href="{{tag.uri}}">{{tag.name}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
