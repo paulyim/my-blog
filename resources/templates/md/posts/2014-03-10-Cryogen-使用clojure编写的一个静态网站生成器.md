@@ -3,11 +3,17 @@
  :tags  ["cryogen"]
  :toc true}
 
+ <br>
+ ***
+ <br>
+
  **本博客站点使用 [Cryogen](http://cryogenweb.org/index.html) + [Github Pages](https://pages.github.com/) 搭建而成。**
 
  本文只作 Cyrogen 的介绍，关于 Github Pages 可查看官方文档或参看这篇博文：[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
 
+<br>
 ## 特性
+***
 
 * 使用 Markdown (默认) 或者 AsciiDoc 发布博文或页面
 * 文章支持标签分类
@@ -19,15 +25,21 @@
 * 生成 RSS
 * 可编译 Sass/SCSS 文件
 
+<br>
 ## 安装条件
+***
 
 需要安装好 [Leiningen][1] 2.5.0 或以上版本。
 
 [1]: https://github.com/technomancy/leiningen
 
+<br>
 ## 开始使用
+***
 
+<br>
 ### 使用 lein 创建一个新的模板项目
+***
 
 使用以下命令创建一个 Cryogen 站点模板：
 
@@ -35,7 +47,9 @@
 lein new cryogen my-blog
 ```
 
+<br>
 ### 运行项目
+***
 
 lein 带有内置的 web 容器，在生成的 `my-blog` 根目录执行以下命令：
 
@@ -45,7 +59,9 @@ lein ring server
 
 ring 容器被启动后，项目 `resources/templates` 目录的内容更改会被自动同步更新。
 
+<br>
 ### 站点配置
+***
 
 通过 `templates/config.edn` 文件可以配置站点信息，如下所示：
 
@@ -81,7 +97,9 @@ ring 容器被启动后，项目 `resources/templates` 目录的内容更改会�
 
 详细说明可以参考官方文档 ["Configuration"](http://cryogenweb.org/docs/configuration.html)
 
+<br>
 ### Markdown 或者 AsciiDoc
+***
 
 Cryogen 默认使用 Markdown 生成站点内容，如果想使用 AsciiDoc，修改项目（e.g. `my-blog`）`project.clj` 文件的 `:dependencies` 属性，将 `cryogen-markdown` 改为 `cryogen-asciidoc` 即可。
 
@@ -89,11 +107,15 @@ Cryogen 默认使用 Markdown 生成站点内容，如果想使用 AsciiDoc，�
 
 `cryogen-markdown` ：编译器会编译 `resources/templates/asc` 目录下以 `.asc` 的文件。
 
+<br>
 ### 设置网站主题
+***
 
 Cryogen 自带了两个主题模板，通过 `resources/templates/themes` 目录的 `config.edn` 文件的属性 `:theme` 进行配置。
 
+<br>
 ### 自定义网站布局
+***
 
 Cryogen 使用 [Selmer](https://github.com/yogthos/Selmer) 模板引擎定义网站布局，具体用法请参考官方文档。
 
@@ -117,7 +139,9 @@ Cryogen 使用 [Selmer](https://github.com/yogthos/Selmer) 模板引擎定义网
 {% endblock %}
 ```
 
+<br>
 ### 代码语法高亮
+***
 
 Cryogen 使用 [Highlight.js](https://highlightjs.org/) 支持代码语法高亮，通过 `templates/js/highlight.pack.js` 文件可以添加更多语言。
 
@@ -127,7 +151,9 @@ Cryogen 使用 [Highlight.js](https://highlightjs.org/) 支持代码语法高亮
 <script>hljs.initHighlightingOnLoad();</script>
 ```
 
+<br>
 ## 发布你的站点
+***
 
 网站静态内容被生成在 `resources/public` 这个目录，将这个目录下的内容发布到你的服务器即可。
 
