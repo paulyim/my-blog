@@ -1,4 +1,4 @@
-{:title "Cryogen文档-Markdown或者AsciDoc格式切换"
+{:title "Cryogen文档 - Markdown 或者 AsciDoc 格式切换"
 :layout :post
 :tags  ["cryogen"]}
 

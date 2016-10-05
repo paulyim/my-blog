@@ -1,4 +1,4 @@
-{:title "Android-themes（主题）-styles（样式）"
+{:title "Android - 主题和样式"
  :layout :post
  :tags  ["android"]
  :toc true}

@@ -1,4 +1,4 @@
-{:title "Android-Views"
+{:title "Android - 视图"
  :layout :post
  :tags  ["android"]
  :toc true}
@@ -13,7 +13,7 @@
 在 Android 开发中定义 Views（视图）是家常便饭的事情，通常这些 Views（视图）会被定义在 layout（布局文件）中，一个 view（视图）也包含了很多属性。
 
 <br>
-### 基本 Views（视图）
+### 基本视图 （Views）
 ***
 
 如下为六个基本视图组件:
@@ -44,7 +44,7 @@ Button myButton = (Button) findViewById(R.id.my_button);
 注意，如果配置了 id 属性的视图组件，当设备的配置改变（如：屏幕改变），那么系统会自动获取当前视图的状态信息。
 
 <br>
-### 视图组件的 height（高度）和 width（宽度）
+### 视图组件的高度 （height）和宽度 （width）
 ***
 
 Android 中的视图组件必须设置 height（高度） 和 width（宽度）：
@@ -86,7 +86,7 @@ view.requestLayout();
 ```
 
 <br>
-### 视图组件的 Margin（外边距） 和 Padding（内边距）
+### 视图组件的外边距 （Margin） 和内边距 （Padding）
 ***
 
 视图的外边距和内边距用来调整视图之间的位置和距离。
@@ -104,7 +104,7 @@ view.requestLayout();
 ```
 
 <br>
-### 视图组件的 Gravity（对齐方式）
+### 视图组件的对齐方式 （Gravity）
 ***
 
 Gravity 用来指定视图控件内容的对齐方式。

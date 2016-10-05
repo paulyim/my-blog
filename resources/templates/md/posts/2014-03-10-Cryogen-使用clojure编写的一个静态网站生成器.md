@@ -1,4 +1,4 @@
-{:title "Cryogen-使用Clojure编写的一个静态网站生成器"
+{:title "Cryogen - 使用 Clojure 编写的一个静态网站生成器"
  :layout :post
  :tags  ["cryogen"]
  :toc true}

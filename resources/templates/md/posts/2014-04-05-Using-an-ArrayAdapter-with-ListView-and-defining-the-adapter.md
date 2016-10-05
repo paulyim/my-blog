@@ -1,4 +1,4 @@
-{:title "Using-an-ArrayAdapter-with-ListView-and-defining-the-adapter"
+{:title "Android - 使用 ListView"
  :layout :post
  :tags  ["android"]
  :toc true}
@@ -16,8 +16,8 @@
 
 简单的总结，`ArrayAdapter` 的使用要结合两样东西：
 
- * `ArrayList`（数据源）数组列表
- * `ListView`（视图控件）显示列表数据的视图控件
+* `ArrayList`（数据源）数组列表
+* `ListView`（视图控件）显示列表数据的视图控件
 
 类似 `ArrayAdapter`，另外一个结合本地数据库 [Local SQLite Database](Local-Databases-with-SQLiteOpenHelper) 操作的数据适配器  [CursorAdapter](Populating-a-ListView-with-a-CursorAdapter)。
 
@@ -57,6 +57,7 @@ ArrayAdapter<String> itemsAdapter =
 ```java
 ListView listView = (ListView) findViewById(R.id.lvItems);
 listView.setAdapter(itemsAdapter);
+```
 
 上面代码会自动把数据适配器的数据（字符串）数组通过 `toString` 方法转换成 `TextView`（`ListView` 的列表项）文本([simple_list_item_1.xml](https://github.com/android/platform_frameworks_base/blob/master/core/res/res/layout/simple_list_item_1.xml))， 这是最简单的列表数据实现方式，如果需要更复杂的可以自定义 `ArrayAdapter`。
 
@@ -64,7 +65,6 @@ listView.setAdapter(itemsAdapter);
 ## ArrayAdapter 自定义用法
 ***
 
-When we want to display a series of items into a list using a custom representation of the items, we need to use our own custom XML layout for each item. To do this, we need to create our own custom `ArrayAdapter` class. See [this repo for the source code](https://github.com/codepath/android-custom-array-adapter-demo). First, we often need to define a model to represent the data within each list item.
 当想定制列表项的显式内容（每个不一样），需要为每个列表项定制 XML 布局文件，以及定制相应的`ArrayAdapter`类（数据适配器）。[参考这个例子](https://github.com/codepath/android-custom-array-adapter-demo)，首先，定义一个数据模型（每个列表项对应的数据对象）类：
 
 <br>
@@ -290,8 +290,7 @@ public class UsersAdapter extends ArrayAdapter<User> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
        // 获取指定位置的列表项数据
-       User user = getItem(position);    
-       // Check if an existing view is being reused, otherwise inflate the view
+       User user = getItem(position);
        // 检查 ViewHolder 是否已创建，没创建则先创建并填充相应的视图数据
        ViewHolder viewHolder; // view lookup cache stored in tag
        if (convertView == null) {
@@ -328,6 +327,6 @@ public class UsersAdapter extends ArrayAdapter<User> {
 ## 参考
 ***
 
- * <http://lucasr.org/2012/04/05/performance-tips-for-androids-listview/>
- * <http://www.doubleencore.com/2013/05/layout-inflation-as-intended/>
- * <http://www.bignerdranch.com/blog/customizing-android-listview-rows-subclassing/>
+* <http://lucasr.org/2012/04/05/performance-tips-for-androids-listview/>
+* <http://www.doubleencore.com/2013/05/layout-inflation-as-intended/>
+* <http://www.bignerdranch.com/blog/customizing-android-listview-rows-subclassing/>
