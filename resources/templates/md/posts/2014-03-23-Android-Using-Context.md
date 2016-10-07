@@ -37,7 +37,7 @@ startActivity(intent);
 如果是启动一个内部的组件，可以传递应用程序当前的包名作为 Context ，通过调用 `context.getPackageName()` 方法。
 
 <br>
-### 创建一个 View（视图）
+### 创建一个视图 （View）
 ***
 
 ```java
@@ -96,7 +96,7 @@ Notification.Builder builder =
 notificationManager.notify(notificationId, builder.build());
 ```
 
-这是 **[官方文档中的系统服务列表](http://developer.android.com/reference/android/content/Context.html#getSystemService(java.lang.String)**（国内访问请自备梯子），通过 Context 对象都可以使用。
+这是 **[官方文档中的系统服务列表](http://developer.android.youdaxue.com/reference/android/content/Context.html#getSystemService(java.lang.String)**，通过 Context 对象都可以使用。
 
 <br>
 ## 应用程序（Application） vs 活动（Activity） Context
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 <br>
-### Anonymous functions（匿名函数）
+### 匿名函数（Anonymous functions）
 ***
 
 注意，当使用匿名函数如实现一个事件监听器，关键字 `this` 在匿名内部类内引用指向的不是 `MainActivity`, 而是匿名内部类本身，所以，在这种情况下需要使用 `MainActivity.this` 指定 Activity Context:
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 <br>
-### Adapters（适配器）
+### 适配器（Adapters）
 ***
 
 <br>

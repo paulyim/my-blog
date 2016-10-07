@@ -12,7 +12,7 @@
 
  在 Android 开发中，我们经常会使用到一个视图控件 `ListView`，它以列表的形式显示数据项，超出手机屏幕的数据以滚动方式呈现，和它配套使用的数据适配器 `Adapter`。数据适配器有多种，其中一个最简单的为 `ArrayAdapter`，它将 `ArrayList` 的对象封装成 `View` 的数据项，然后被 `ListView` 容器加载。
 
-<img src="https://i.imgur.com/mk82Jd2.jpg" width="600" />
+<img src="http://oem503hzx.bkt.clouddn.com/Android-Adapter.jpg" width="600" />
 
 简单的总结，`ArrayAdapter` 的使用要结合两样东西：
 
@@ -31,11 +31,11 @@
 
 其实，当向下滚动列表视图时，**之前被实例化的数据项离开屏幕（看不见了）后依然驻留在内存中，被后面重用**，那些新出现在屏幕上的数据项**重用之前保留在内存中的数据项**。也就是说，就算我们的列表数据超过1000行，也只有 ~7（标准屏幕高度） 个数据库会实例化到内存中，如下图：
 
-<img src="https://i.imgur.com/zpkVUMR.png" width="500" />
+<img src="http://oem503hzx.bkt.clouddn.com/Android-Views-Recyle.png" width="500" />
 
 这是另外一张关于视图回收的图片：
 
-<img src="https://i.imgur.com/SZ8iKuu.jpg" width="500" />
+<img src="http://oem503hzx.bkt.clouddn.com/Android-ListView-Recyle.jpg" width="500" />
 
 参考 [this ListView guide](http://android.amberfog.com/?p=296) 了解更多关于列表性能优化的内容，或视频 [this Udacity video on view recycling](https://www.youtube.com/watch?v=2lcoB5-PCCw)
 

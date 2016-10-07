@@ -147,9 +147,9 @@ Styles 结合 drawables 资源可以很方便有效地管理我们所看到的�
  </resources>
  ```
 
- 上面首先通过 `AppTheme` 为我们生成和修改 [buttonStyle](http://developer.android.com/reference/android/R.attr.html#buttonStyle)（自备梯子） 和 `textViewStyle` 的默认样式，然后分别继承 `Widget.Button` 和 `Widget.TextView` 修改各自的文本颜色，效果如下：
+ 上面首先通过 `AppTheme` 为我们生成和修改 [buttonStyle](http://developer.android.youdaxue.com/reference/android/R.attr.html#buttonStyle) 和 `textViewStyle` 的默认样式，然后分别继承 `Widget.Button` 和 `Widget.TextView` 修改各自的文本颜色，效果如下：
 
- ![Screen](https://i.imgur.com/fF7UiTo.png)
+ ![Screen](http://oem503hzx.bkt.clouddn.com/Android-StylesDemo.png)
 
 <br>
 ### 一些有用的资源
@@ -157,7 +157,7 @@ Styles 结合 drawables 资源可以很方便有效地管理我们所看到的�
 
  如果你不知道怎么去定义自己的主题和样式，可以参考下面的一些资源：
 * [themes.xml](http://omapzoom.org/?p=platform/frameworks/base.git;a=blob;f=core/res/res/values/themes.xml;hb=master) 一个包含了超过千种默认样式的应用程序
-* [R.attr](http://developer.android.com/reference/android/R.attr.html)（自备梯子） 一个完整的样式属性文档
+* [R.attr](http://developer.android.youdaxue.com/reference/android/R.attr.html) 一个完整的样式属性文档
 * [Useful holo theme generator tool](http://android-holo-colors.com/) 快速生成默认的视图控件（可以自定义颜色）
 * [Customizing Action Bar styles guide](2014-03-24-Extended-ActionBar-Guide#custom-actionbar-styles) and [sample code](https://github.com/codepath/android-actionbar-style-demo) 定制 Action Bar
 
@@ -177,7 +177,7 @@ Styles 结合 drawables 资源可以很方便有效地管理我们所看到的�
  <activity android:theme="@style/CustomTheme">
  ```
 
- 更多信息请参考官方文档 [official styles guide](http://developer.android.com/guide/topics/ui/themes.html)（自备梯子）。
+ 更多信息请参考官方文档 [official styles guide](http://developer.android.youdaxue.com/guide/topics/ui/themes.html)。
 
 <br>
 ### 引用主题（themes）中的样式（styles）
@@ -230,10 +230,10 @@ Styles 结合 drawables 资源可以很方便有效地管理我们所看到的�
 ## 参考
 ***
 
-* <http://developer.android.com/guide/topics/ui/themes.html>
+* <http://developer.android.youdaxue.com/guide/topics/ui/themes.html>
 * <http://www.vogella.com/articles/AndroidStylesThemes/article.html>
 * <http://mobile.tutsplus.com/tutorials/android/android-sdk-exploring-styles-and-themes/>
-* <http://developer.android.com/guide/topics/resources/style-resource.html>
+* <http://developer.android.youdaxue.com/guide/topics/resources/style-resource.html>
 * <http://java.dzone.com/articles/creating-custom-android-styles>
 * <http://janrain.com/blog/introduction-to-android-theme-customization/>
 * <http://javatechig.com/android/android-styles-and-themes-tutorial/>

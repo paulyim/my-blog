@@ -192,7 +192,7 @@ Gravity 用来指定视图控件内容的对齐方式。
 </tbody>
 </table>
 
-更多详细内容请参考官方文档 [View docs](http://developer.android.com/reference/android/view/View.html) 和 [TextView docs](http://developer.android.com/reference/android/widget/TextView.html)（国内访问请自备梯子）， 如下为一个基本示例：
+更多详细内容请参考官方文档 [View docs](http://developer.android.youdaxue.com/reference/android/view/View.html) 和 [TextView docs](http://developer.android.youdaxue.com/reference/android/widget/TextView.html)（国内访问请自备梯子）， 如下为一个基本示例：
 
 ```xml
 <TextView
@@ -208,6 +208,6 @@ Gravity 用来指定视图控件内容的对齐方式。
 ## 参考
 ***
 
-* <http://developer.android.com/reference/android/view/View.html>
-* <http://developer.android.com/reference/android/widget/TextView.html>
+* <http://developer.android.youdaxue.com/reference/android/view/View.html>
+* <http://developer.android.youdaxue.com/reference/android/widget/TextView.html>
 * <http://mobile.tutsplus.com/tutorials/android/android-sdk-user-interface-design/>
