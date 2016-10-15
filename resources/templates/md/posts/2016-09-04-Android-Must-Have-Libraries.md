@@ -98,16 +98,16 @@
 </tbody>
 </table>
 
-注意，上面的类库都是独立开发出来的，在项目中同时使用可能会出现一些问题，下面是一些已知的兼容问题。
+**注意**，上面的类库都是独立开发出来的，在项目中同时使用可能会出现一些问题，下面是一些已知的兼容问题：
 
 <br>
-#### Parceler 和 IcePick
+**Parceler 和 IcePick**
 ***
 
 不能使用 **IcePick** 来保存 **Parceler** 对象的状态，相关问题讨论在这里 [this Github issue](https://github.com/frankiesardo/icepick/pull/20)。
 
 <br>
-#### ButterKnife 和 Parceler
+**ButterKnife 和 Parceler**
 ***
 
 当同时使用 **Butterknife** 和 **Parceler** 时，会导致产生厂重复的 `javax.annotation.processing.Processor`，可以通过配置 `app/build.gradle` 文件排除这个冲突：
@@ -119,7 +119,7 @@
 ```
 
 <br>
-#### ButterKnife 和 Custom View
+**ButterKnife 和 Custom View**
 ***
 
 当使用 `ButterKnife` 或者 `Dagger` 这类视图注入框架时，往往在 Android Studio 的布局预览窗口出现 `isEditMode()` 未定义的错误提示。本质原因是由于 `isEditMode()` 这个方法只有在程序运行时才会被执行，而在布局预览窗口是不会执行的。
@@ -324,11 +324,11 @@
 * [CommandDataBinding](https://github.com/radzio/android-data-binding-command) - 优雅处理 `OnClick` 事件。
 
 <br>
-### 兼容
+### 向下兼容
 ***
 
-* [NineOldAndroids](http://nineoldandroids.com/) - 将 Android 3.0(Honeycomb)所有动画 API(ObjectAnimator ValueAnimator 等)兼容到 Android1.0。
-* [HoloEverywhere](https://github.com/Prototik/HoloEverywhere) - 将 Android 4.2 的 Holo 主题兼容到 2.1+。
+* [NineOldAndroids](http://nineoldandroids.com/) - 将 Android 3.0(Honeycomb)所有动画 API(ObjectAnimator ValueAnimator 等)兼容到 Android　1.0。
+* [HoloEverywhere](https://github.com/Prototik/HoloEverywhere) - 将 Android 4.2 的 Holo 主题兼容到 Android 2.1+。
 * [CropImage](https://github.com/biokys/cropimage) - 简单实现图片剪裁的兼容。
 
 <br>
