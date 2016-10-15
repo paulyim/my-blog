@@ -79,13 +79,13 @@
 <img src="http://oem503hzx.bkt.clouddn.com/Android-Common-Views-SearchView.png" width="1080"/>
 
 <br>
-## ProgressBar (圆圈加载)
+## ProgressBar (圆环)
 ***
 
 <img src="http://oem503hzx.bkt.clouddn.com/Android-Common-Views-ProgressBar-Loading.png" width="1080"/>
 
 <br>
-## ProgressBar (水平加载)
+## ProgressBar (水平)
 ***
 
 <img src="http://oem503hzx.bkt.clouddn.com/Android-Common-Views-ProgressBar-Horizontal.png" width="1080"/>
