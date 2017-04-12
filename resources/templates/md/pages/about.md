@@ -3,5 +3,3 @@
  :navbar? true}
 
 ## Write something about something
-
-wow wow wow
