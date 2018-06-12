@@ -1,6 +1,6 @@
 {:site-title         "Paul Yim Blog"
  :author             "Paul Yim"
- :description        "This blog is usually talk about clojure and android development"
+ :description        "This blog is usually talk about android and python development"
  :site-url           "http://paulyim.coding.me/"
  :post-root          "posts"
  :page-root          "pages"

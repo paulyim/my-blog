@@ -33,7 +33,6 @@
 我自己平常是看以下几个 Github 上的项目，看到新的东西就去想自己大概要怎么把它实现出来，大约需要几天，有空就去实践吧，欢迎交流：
 * [GitHub Android Libraries Top 100](https://github.com/Freelander/Android_Data/blob/master/Android-Librarys-Top-100.md)
 * [Libraries for developers](https://play.google.com/store/apps/details?id=com.desarrollodroide.repos&hl=zh_TW)
-
 <br>
 ###　Design Pattern（设计模式）
 ***
